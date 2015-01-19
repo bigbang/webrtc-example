@@ -1,5 +1,3 @@
-
-
 console.log("starting!");
 
 //Create an instance of the BigBangClient
@@ -21,27 +19,28 @@ client.connect(host, function (err) {
             return;
         }
         console.log('subscribed!');
+        var webrtc = new SimpleWebRTC({
+            // the id/element dom element that will hold "our" video
+            localVideoEl: 'localVideo',
+            // the id/element dom element that will hold remote videos
+            remoteVideosEl: 'remotesVideos',
+            // immediately ask for camera access
+            autoRequestMedia: true
+        });
+
+
+// we have to wait until it's ready
+        webrtc.on('readyToCall', function () {
+            console.log('ready!');
+            // you can name it anything
+            webrtc.joinRoom('yargladfj24r8a');
+        });
+
+
         //beginChat(channel);
 
     });
 });
 
 
-/*
-var webrtc = new SimpleWebRTC({
-    // the id/element dom element that will hold "our" video
-    localVideoEl: 'localVideo',
-    // the id/element dom element that will hold remote videos
-    remoteVideosEl: 'remotesVideos',
-    // immediately ask for camera access
-    autoRequestMedia: true
-});
 
-
-// we have to wait until it's ready
-webrtc.on('readyToCall', function () {
-    console.log('ready!');
-    // you can name it anything
-    webrtc.joinRoom('yargladfj24r8a');
-});
-    */

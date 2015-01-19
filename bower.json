@@ -1,0 +1,21 @@
+{
+  "name": "webrtc-example",
+  "version": "0.0.1",
+  "homepage": "https://github.com/bigbang/webrtc-example",
+  "authors": [
+    "tigeba <tigeba@altereality.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bigbang.io": "0.0.5",
+    "bootstrap": "~3.2.0"
+  }
+}

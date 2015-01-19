@@ -1,0 +1,27 @@
+{
+  "name": "webrtc-example",
+  "version": "0.0.0",
+  "description": "Signaling with Big Bang and WebRTC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://tigeba@github.com/bigbang/webrtc-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bigbang/webrtc-example/issues"
+  },
+  "homepage": "https://github.com/bigbang/webrtc-example",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^3.3.0",
+    "grunt-contrib-clean": "^0.6.0"
+  },
+  "dependencies": {
+    "bigbang.io": "0.0.5"
+  }
+}

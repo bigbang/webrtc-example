@@ -24,7 +24,9 @@ Draw an underline under: this is how you use presence, a big bang feature
 - we are going to use BB channels (and the presence feature) to handle signaling
 - simplewebRTC is used as our demo library
 -- wrapper for the low-level webRTC API
+
 ###Steps/concepts
+
 1. setup a channel
 2. join channel
 3. create channeldata directory
